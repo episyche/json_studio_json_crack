@@ -1,0 +1,21 @@
+export const setJson = "SETJSON";
+export const clearJson = "CLEARJSON";
+export const setGraphNodes = "SETGRAPHNODES";
+export const setGraphEdges = "SETGRAPHEDGES";
+export const setDirection = "SETDIRECTION";
+export const setData = "SETDATA";
+export const setShow = "SETSHOW";
+export const setEdgeIds = "SETEDGEIDS";
+export const setNodeIds = "SETNODEIDS";
+export const setNodeExpandButton = "SETNODEEXPANDBUTTON";
+export const setChildrenCount = "SETCHILDRENCOUNT";
+export const setSearchText = "SETSEARCHTEXT";
+export const setElement = "SETELEMENT";
+export const setFirstNodePosition = "SETFIRSTNODEPOSITION";
+export const setFullscreen = "SETFULLSCREEN";
+export const setUserInput = "SETUSERINPUT";
+export const setImageSize = "SETIMAGESIZE";
+export const setInputscreen = "SETINPUTSCREEN";
+export const lclstgValue = "LCLSTGVALUE"
+export const PopUpValue = "popupValue"
+

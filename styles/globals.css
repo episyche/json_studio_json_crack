@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 6px;
+}
+
+/* For new input */
+.ace_editor {
+  height: 74vh !important;
+  width: 100% !important;
+}
+
+/* brackets */
+.ace_paren {
+  color: #000000 !important;
+  font-weight: normal !important;
+}
+
+/* json key */
+.ace_variable {
+  color: #675d5d !important;
+}
+
+.ace_tag {
+  color: #675d5d !important;
+}
+
+/*json string */
+.ace_string {
+  color: #2438ef !important;
+}
+
+.ace_text {
+  color: #2438ef !important;
+}
+
+/* json boolean */
+.ace_boolean {
+  color: red !important;
+}
+
+/*json Numeric value */
+.ace_numeric {
+  color: green !important;
+}
+
+/* For line break */
+.ace-github .ace_print-margin {
+  width: 0px !important;
+  background: none !important;
+}
+
+.error {
+  background: #F5B7B1 !important;
+  color: rgb(9, 9, 9) !important;
+}
+
+
+.valueError {
+  background: #A3E4D7 !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+pre {
+  /* white-space: pre-wrap; */
+  overflow-x: none;
+  height: 25px;
+  /* background: #EEE; */
+}
+
+pre:focus {
+  /* background: #fffcce; */
+  /* background: #eacd8c; */
+  border: none;
+  outline: 0px solid transparent;
+
+}
+
+
+.editormode:focus {
+  outline: 0px solid transparent;
+}
+
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+
+/* div.block.selected {
+  background-color: #ddf;
+} */
+
+/* div.block {
+  margin: 24px;
+  border-bottom: 1px solid #ddd;
+  font-size: 13px;
+} */
+
+
+pre::selection {
+  background: rgb(174, 213, 239);
+  color: #160000;
+}
+
+#lefteditableDiv {
+  overflow: scroll;
+  overflow-y: hidden;
+  scroll-margin-block-start: 11px;
+  scroll-margin-block-end: 11px;
+}
+
+#lefteditableDiv::-webkit-scrollbar {
+  /* -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.1); */
+  background-color: #F5F5F5;
+  height: 2px;
+  width: 0px;
+}
+
+#righteditableDiv {
+  overflow: scroll;
+  overflow-y: hidden;
+  scroll-margin-block-start: 11px;
+  scroll-margin-block-end: 11px;
+}
+
+#righteditableDiv::-webkit-scrollbar {
+  /* -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.1); */
+  background-color: #F5F5F5;
+  height: 2px;
+  width: 0px;
+}
+
+.rightmissing {
+  background-color: rgb(246, 143, 143);
+}
+
+
+
+
+
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 0 rgb(86, 6, 28));
+    opacity: 1;
+  }
+  100% {
+    filter: drop-shadow(0 0 0.5rem rgb(231, 41, 31));
+    opacity: 0.9;
+  }
+}
+
+.animate-pulse {
+  animation: glow 2s ease-in-out infinite;
+}
